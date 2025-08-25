@@ -4,7 +4,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 class TestModelTraining(unittest.TestCase):
     def test_model_training(self):
-        model = joblib.load('model/telecom_churn_model.pkl')
+        model = joblib.load("data/iris.csv")
         self.assertIsInstance(model, RandomForestClassifier)
         self.assertGreaterEqual(len(model.feature_importances_), 4)
 
